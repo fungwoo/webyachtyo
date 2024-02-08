@@ -1,0 +1,534 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+image,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #171717;
+}
+
+/* font-family: 'El Messiri', sans-serif;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-family: 'Noto Serif KR', serif; */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #171717;
+}
+
+
+
+/*header-배경색*/
+#header {
+    background-color: #112131;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+/*header_inner*/
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.login {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.login li {
+    border-right: 1px solid #ccc;
+    line-height: 14px;
+    text-align: center;
+    width: 100px;
+    padding-right: 5px;
+}
+
+.login li a:hover {
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.login li:last-child {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.login li a {
+    color: #ccc;
+}
+
+.header_inner {
+    display: flex;
+}
+
+
+.logo {
+    padding-right: 100px;
+}
+
+/*gnb*/
+#gnb {
+    display: flex;
+}
+
+#gnb li a {
+    color: #fff;
+}
+
+#gnb li:hover {
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#gnb>li {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 30px 40px;
+    position: relative;
+}
+
+#gnb>li>a {
+    position: relative;
+}
+
+#gnb>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(180, 165, 113);
+}
+
+.sub>li:hover {
+    background-color: rgb(61, 133, 175, 0.8);
+    border-radius: 20px;
+}
+
+#gnb>li:hover>a::after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+/*sub*/
+.sub {
+    display: none;
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.sub li {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*sub_bg*/
+/*포지션의 기준을 header에 잡아준다. 그런데 
+만약, header를 fixed 시킬 것이면(여기서 header는 이미position:fixed; 되어 있음.)
+2중으로 position 을 주게 되는 것이므로 header에 relative를 따로 줄 필요가 없다.
+(css상에서는 아래에(밑에) 사용한 속성(값)이 우선한다.)
+이것은 '기준이 되는 같은 대상(여기서는 header)'이면 
+ header에는 position:relative; 를 해주지 않는다.
+ 이미 같은 기준인 header가 위에서 fixed 되었으니 자연히 relative가 된 샘이다.*/
+.sub_bg {
+    display: none;
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*main_banner-영상*/
+#main_banner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 108px;
+}
+
+#main_banner video {
+    width: 100%;
+}
+
+.tour_info {
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+
+    border-left: 2px solid #fff;
+    line-height: 32px;
+    padding-left: 20px;
+
+    border-right: 2px solid #fff;
+    line-height: 32px;
+    padding-right: 10px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tour_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    padding-left: 20px;
+    letter-spacing: 20px;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/*container-배경용*/
+#container {
+    background: url(../images_sub4/bg_birds.png) no-repeat center center;
+    width: 100%;
+    height: 2184px;
+}
+
+/*--address--*/
+#address {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 150px 0 0;
+}
+
+#title_box {
+    width: 572px;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 200px 0 200px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.left1 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #98855d;
+    background-color: #112131;
+    padding: 20px 55px;
+    display: inline-block;
+}
+
+.right1 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #112131;
+    background-color: #98855d;
+    padding: 20px 55px;
+    display: inline-block;
+}
+
+.sub_title1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 16px 0 30px;
+}
+
+/*inner_box*/
+.inner_box {
+    padding-top: 50px;
+}
+
+/*--inner--*/
+.locate,
+.traffic,
+.parking {
+    text-align: center;
+}
+
+.traffic {
+    padding: 70px 0;
+}
+
+#inner {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0 15px;
+}
+
+.on {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+
+
+/*for_you_‘YACHTYO’ For You*/
+#for_you {
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 340px;
+}
+
+.text_box {
+    width: 380px;
+    text-align: center;
+}
+
+#map {
+    width: 790px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.title2 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #013b7a;
+}
+
+.sub_title2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #013b7a;
+    text-align: center;
+    padding: 16px 0 80px;
+}
+
+.eng1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 26px;
+    color: #17a4bc;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.eng2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 26px;
+    color: #a8966d;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.eng3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 26px;
+    color: #eb6a54;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.kor {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #013b7a;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+/*footer*/
+#footer {
+    background: url(../images_sub4/footer_bg1_goldbar1750x534.png) no-repeat center 0;
+    background-size: cover;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.goldbar {
+    background: #a6956c;
+    border-radius: 50px;
+    max-width: 1750px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left_top li {
+    border-right: 2px solid #fff;
+    line-height: 14px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.left_top li:last-child {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.left_top li a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sns li {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#box_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_box {
+    padding-top: 40px;
+}
+
+.left_box li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.about {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.licence {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 18px;
+}
+
+.ceo_tel {
+    padding: 40px 0;
+}
+
+#footer {
+    padding-top: 220px;
+}
+
+
+
+@keyframes move1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#footer {
+    position: relative;
+}
+
+.ship_animation {
+    position: absolute;
+    top: 150px;
+    left: 1400px;
+    animation: move1 2s ease-in-out infinite alternate;
+    /*alternate는 
+  정방향 한번 1s(1초)에 실행, 
+  역방향 한번 1s에 실행을 번갈아 가면서 하게 함.
+  (위로 갔다가 다시 돌아오는데 총 2초가 걸림)*/
+}
+
+/*footer 끝*/
+
+
+
+/*top_btn*/
+.top_btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 99;
+    display: none;
+}
+
+/*the end*/
