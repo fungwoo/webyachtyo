@@ -501,7 +501,7 @@ body {
     /*content: ""; 는 인라인요소이며, 가상의 빈 공간이다*/
     display: block;
     /*content는 인라인 요소이므로 display: block; 으로 블락요소화 한다.*/
-    width: 2000px;
+    width: 942px;
     /*가로길이(width)는 충분히 주고 작업한다.*/
     height: 200px;
     /*세로높이(height)는 원하는 길이로 설정*/
@@ -704,7 +704,9 @@ body {
 
 /*FAQ_자주묻는질문_10개*/
 #container2 {
-    background-color: #013b7a;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%,
+            rgba(255, 255, 255, 1) 0%, rgba(1, 59, 122, 1) 25%, rgba(1, 59, 122, 1) 100%);
     margin: 0 auto;
     height: 1300px;
     margin-top: 180px;
