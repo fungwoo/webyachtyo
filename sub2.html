@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>요트요</title>
+    <link rel="shortcut icon" href="./images_sub2/favicon.png" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--구글폰트:노토산스, 노토세리프, 엘메씨리-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style_sub2.css">
+</head>
+
+
+<body>
+    <!--header-->
+    <div id="header">
+        <ul class="login">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+
+        <div class="header_inner"><!--header_inner-->
+            <h1 class="logo">
+                <a href="./index_main.html#logo"><img src="./images_sub2/logo1.png" alt="로고_골드"></a>
+            </h1>
+
+            <ul id="gnb">
+                <li><a href="./sub1.html">투어소개</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html#intro">요트소개</a></li>
+                        <li><a href="./sub1.html#course_title">투어안내</a></li>
+                        <li><a href="./sub1.html#container2">서비스</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub2.html">투어종류</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html#public_tour">퍼블릭</a></li>
+                        <li><a href="./sub2.html#private_tour">프라이빗</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub3.html">예약하기</a>
+                    <ul class="sub">
+                        <li><a href="./sub3.html#notice1">예약절차</a></li>
+                        <li><a href="./sub3.html#Precautions_bg">주의사항</a></li>
+                        <li><a href="./sub3.html#refund">취소/환불<br>환불규정</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub4.html">오시는길</a>
+                    <ul class="sub">
+                        <li><a href="./sub4.html#container">주소지</a></li>
+                        <li><a href="./sub4.html#inner">대중교통/주차</a></li>
+                        <li><a href="./sub4.html#map">위치찾기</a></li>
+                    </ul>
+                </li>
+            </ul><!--gnb-->
+
+            <div class="sub_bg"></div><!--sub의 반투명 배경용-->
+
+        </div><!--header_inner-->
+    </div><!--header-->
+
+
+    <div id="main_banner"><!--메인배너-->
+        <p class="tour_info">TOUR PROGRAM</p>
+        <h1 class="tour_title">투어종류</h1>
+
+        <!--슬라이드 이미지가 같은 곳에 겹쳐서 표현되기 때문에, 
+        ul 의 li 등 '형제'로 구성하여 html을 만든다.-->
+        <div id="slide">
+            <!--이미지 크기와 같이 설정하여, overflow:hidden을 부여할 예정. 
+            '이미지가 바깥영역으로 갔을 때 보이지 않게' 설정하는 역할-->
+            <ul>
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+                <li class="img4"></li>
+            </ul>
+        </div><!--slide-->
+    </div><!--메인배너-->
+
+
+    <!--public_tour -퍼블릭투어-->
+    <div id="public_tour">
+        <div class="text1">
+            <h1 id="title1">Public Tour</h1>
+            <h3 class="sub_title1">퍼블릭 투어</h3>
+            <p class="expl1">가장 인기있는 추천 투어 코스이며,<br>
+                합리적인 요금으로 다른 사람들과 동승하여<br>
+                해운대, 광안리 주변바다를<br> 즐길 수 있는 투어입니다.</p>
+        </div>
+
+        <div class="content1">
+            <!-- Swiper -->
+            <div class="swiper public">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images_sub2/public1.jpg" alt="요트이미지1"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/public2.jpg" alt="요트이미지2"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/public3.jpg" alt="요트이미지3"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/public4.jpg" alt="요트이미지4"></div>
+                </div>
+
+                <div class="swiper-button-next public_next"></div>
+                <div class="swiper-button-prev public_prev"></div>
+                <div class="swiper-pagination public_pag"></div>
+            </div>
+        </div>
+    </div><!--public_tour-->
+
+
+    <!--1.public_tour_fare-퍼블릭투어요금-
+        div만 설정한 방식이고_img로 들어갈 div-->
+    <!--2.public_tour_fare-퍼블릭투어요금-->
+    <div id="publicfare_bg"><!--아래있는 div인 "publicfare"의 before라는 의미-->
+
+        <div id="publicfare">
+            <div class="text2">
+                <h1 id="title2">Public Tour Fare</h1>
+                <h3 class="sub_title2">퍼블릭 투어 요금</h3>
+                <!--'특수기호'인 '※' 의 아래줄부터 '들여쓰기' 하려면,
+                    행마다 태그를(예:p태그) 각각 나눠서 
+                    'position'으로 배치시켜준다.-->
+                <p class="expl2">
+                    <b>36개월 미만의 유아</b>는 모든 이용이<br>
+                    <b>무료</b>입니다.<br>
+                    ｜연령확인서류를 지참해 주세요.｜
+                </p>
+                <p class="expl2">유아동승시 사전에 꼭 전화주세요.</p>
+                <p class="expl2">소아기준:초등학생 / 대인:중학생이상</p>
+
+            </div>
+
+            <table id="chart1">
+                <tr class="bold_line">
+                    <td></td>
+                    <th class="chart_title"><b>퍼블릭투어요금</b></th>
+                    <td></td>
+                </tr>
+                <tr class="thin_line">
+                    <td class="thin">구분</td>
+                    <td class="bold"><b>대인</b><br><span>(14세이상)</span></td>
+                    <td class="bold"><b>소인</b><br><span>(36개월~13세)</span></td>
+                </tr>
+                <tr class="thin_line">
+                    <td class="thin">주간<br><span>(16시까지)</span></td>
+                    <td class="bold"><b>15,000원</b></td>
+                    <td class="bold"><b>9,000원</b></td>
+                </tr>
+                <tr class="thin_line">
+                    <td class="thin">썬셋<br><span>(17시)</span></td>
+                    <td class="bold"><b>30,000원</b></td>
+                    <td class="bold"><b>20,000원</b></td>
+                </tr>
+                <tr class="bold_line">
+                    <td class="thin">야간<br><span>(18~22시)</span></td>
+                    <td class="bold"><b>20,000원</b></td>
+                    <td class="bold"><b>15,000원</b></td>
+                </tr>
+            </table><!--chart1-->
+        </div><!--publicfare-->
+    </div><!--2.public_tour_fare-퍼블릭투어요금-->
+
+
+    <!--1.public_time_table-퍼블릭 운항시간
+    -div만 설정한 방식이고_img는 css에 넣고 위치, scroll 또는 fixed할 수 있다.-->
+    <!--2.public_time_table-퍼블릭 운항시간-->
+    <div id="public_timetb">
+        <div class="text3">
+            <h1 id="title3">Time Table</h1>
+            <h3 class="sub_title3">출항 및 운항시간</h3>
+            <p class="expl3">첫 출항 시간은 상황에 따라 유동적일 수 <br>있습니다.</p>
+        </div>
+
+        <table id="chart2">
+            <tr class="thin_line2">
+                <td class="thin2">출항 시간</td>
+                <td class="thin2"><b>AM 11 ~ PM 10</b> - 매시 <b>정각</b>에 출항 합니다.</td>
+            </tr>
+            <tr>
+                <td class="thin2">운항소요시간</td>
+                <td class="thin2">약 55분 소요</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--흘러가는 글씨_textloop-->
+    <div class="text_loop">
+        <p><span>티켓 구매 전!! 출항시간의 가능여부</span>를 꼭 <span>확인 후 구매</span>해 주세요!^^</p>
+    </div>
+
+
+    <!--private tour-프라이빗투어-->
+    <div id="private_tour">
+        <div class="content2">
+            <!-- Swiper -->
+            <div class="swiper private">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images_sub2/private1.jpg" alt="프라이빗1"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/private2.jpg" alt="프라이빗2"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/private3.jpg" alt="프라이빗3"></div>
+                    <div class="swiper-slide"><img src="./images_sub2/private4.jpg" alt="프라이빗4"></div>
+
+                </div>
+
+                <div class="swiper-button-next private_next"></div>
+                <div class="swiper-button-prev private_prev"></div>
+                <div class="swiper-pagination private_pag"></div>
+            </div>
+
+            <div class="text4">
+                <h1 id="title4">Private Tour</h1>
+                <h3 class="sub_title4">프라이빗 투어</h3>
+                <p class="expl4">원하는 시간 / 코스를 지인들만 탑승하여<br>
+                    요트 전부를 오붓하게 마음껏 즐길 수 있는<br> '단독' 투어입니다.</p>
+            </div>
+        </div>
+
+
+        <!--1.private_tour_fare-퍼블릭투어요금-
+        div만 설정한 방식이고_img로 들어갈 div-->
+        <!--2.private_tour_fare-퍼블릭투어요금-->
+        <div id="privatefare_bg"><!--아래있는 div인 "privatefare"의 before라는 의미-->
+
+            <div id="privatefare">
+                <div class="text5">
+                    <h1 id="title5">Private Tour Fare</h1>
+                    <h3 class="sub_title5">프라이빗 투어 요금</h3>
+                    <!--특수기호인 ※의 아래줄부터 '들여쓰기'하려면,
+                    행마다 태그를(예:p태그) 각각 나눠서 
+                    position으로 배치시켜주고 padding-left로 간격을 조절한다.-->
+                    <p class="expl5">
+                        출항 시간 및 날짜에 따라 요금은<br>
+                        상이하오니 자세한 요금은<br>
+                        문의 후 예약 바랍니다.
+                    </p>
+                </div>
+
+                <table id="chart3">
+                    <tr class="bold_line3">
+                        <th></th>
+                        <th class="chart_title3"></b>프라이빗 투어 요금</b></th>
+                        <th></th>
+                    </tr>
+                    <tr class="thin_line3">
+                        <td class="thin3">주간<br><span>(16시 항차)</span></td>
+                        <td class="thin3">썬셋<br><span>(17시 항차)</span></td>
+                        <td class="thin3">야간<br><span>(18시~ 항차)</span></td>
+                    </tr>
+                    <tr class="prices">
+                        <td class="bold3"><b>20만원</b> 부터~</td>
+                        <td class="bold3"><b>40만원</b> 부터~</td>
+                        <td class="bold3"><b>30만원</b> 부터~</td>
+                    </tr>
+                </table>
+            </div><!--privatefare-->
+        </div><!--2.private_tour_fare-프라이빗투어요금-->
+
+
+        <!--2.private_time_table-프라이빗 운항시간-->
+        <div id="private_timetb">
+            <div class="text6">
+                <h1 id="title6">Time Table</h1>
+                <h3 class="sub_title6">출항 및 운항시간</h3>
+                <p class="expl6">첫 출항 시간은 상황에 따라 유동적일 수 <br>있습니다.</p>
+            </div>
+
+            <table id="chart6">
+                <tr class="thin_line6">
+                    <td class="thin6">출항 시간</td>
+                    <td class="thin6"><b>AM 11 ~ PM 10</b> - 매시 <b>정각</b>에 출항 합니다.</td>
+                </tr>
+                <tr>
+                    <td class="thin6">운항소요시간</td>
+                    <td class="thin6">약 55분 소요</td>
+                </tr>
+            </table>
+        </div><!--2.private_time_table-프라이빗 운항시간-->
+
+    </div><!--private tour-프라이빗투어-->
+
+
+    <!--Footer-->
+    <div id="footer">
+        <h1 class="ship_animation"><!--요트 애니메이션-->
+            <img src="./images_sub2/ship_animate.png" alt="요트애니메이션">
+        </h1>
+
+        <div class="goldbar">
+            <div class="footer_inner">
+                <ul class="left_top">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.messenger.com/"><img src="./images_sub2/icon1_facebook.png" alt="페이스북"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img src="./images_sub2/icon2_insta.png" alt="인스타그램"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/"><img src="./images_sub2/icon3_youtube.png" alt="유튜브"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="box_inner">
+            <ul class="left_box">
+                <li>
+                    <a href="#">
+                        <img src="./images_sub2/icon4_locate.png" alt="주소"></a>
+                    <p class="about">부산 해운대구 동백로 2024</p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images_sub2/icon5_tel.png" alt="전화"></a>
+                    <p class="about">051-884-0987</p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images_sub2/icon6_www.png" alt="웹사이트"></a>
+                    <p class="about">www.yachtyo.com</p>
+                </li>
+
+                <p class="licence">Biz License. 007-07-00707</p>
+            </ul>
+
+            <div class="right_box">
+                <h1 class="ceo_tel"><a href="#"><img src="./images_sub2/1588.png" alt="대표전화"></a></h1>
+                <h2 class="white_logo"><a href="#"><img src="./images_sub2/logo_white.png" alt="로고백색"></a></h2>
+            </div>
+        </div><!--box_inner-->
+    </div><!--footer-->
+
+
+
+    <!--Top btn-->
+    <p class="top_btn">
+        <a href="#main_banner"><img src="./images_sub2/top_btn.png" alt="탑버튼"></a>
+    </p>
+    <!--the end-->
+
+
+
+
+    <!--라이브러리_ 메인베너 fade_slide제이쿼리-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/fade_slide.js"></script>
+
+
+
+    <!-- Swiper JS --> <!--Autoplay-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".public", {
+            spaceBetween: 0,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Swiper JS --> <!--Autoplay-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".private", {
+            spaceBetween: 0,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <!--서브메뉴 슬라이드 : 
+        마우스를 gnb글자(li)에 올리면 아래로 내려가면서 나타나고, 
+        빠지면  마우스가 올라감-제이쿼리-->
+
+    <script src="./js/script_topbtn.js"></script>
+    <!--top_btn을 원하는 위치에서 나타내기-제이쿼리-->
+
+    <script src="./js/script_easein.js"></script>
+    <!--top버튼 이동시 부드럽게 이동하기-->
+</body>
+
+</html>

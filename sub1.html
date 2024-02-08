@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>요트요</title>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--구글폰트:노토산스, 노토세리프, 엘메씨리-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style_sub1.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <div id="header">
+        <ul class="login">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+
+        <div class="header_inner"><!--header_inner-->
+            <h1 class="logo">
+                <a href="./index_main.html#logo"><img src="./images_sub3/logo1.png" alt="로고_골드"></a>
+            </h1>
+
+            <ul id="gnb">
+                <li><a href="./sub1.html">투어안내</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html#intro">요트소개</a></li>
+                        <li><a href="./sub1.html#course_title">투어안내</a></li>
+                        <li><a href="./sub1.html#container2">서비스</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub2.html">투어종류</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html#public_tour">퍼블릭</a></li>
+                        <li><a href="./sub2.html#private_tour">프라이빗</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub3.html">예약하기</a>
+                    <ul class="sub">
+                        <li><a href="./sub3.html#notice1">예약절차</a></li>
+                        <li><a href="./sub3.html#Precautions_bg">주의사항</a></li>
+                        <li><a href="./sub3.html#refund">취소/환불<br>환불규정</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./sub4.html">오시는길</a>
+                    <ul class="sub">
+                        <li><a href="./sub4.html#container">주소지</a></li>
+                        <li><a href="./sub4.html#inner">대중교통/주차</a></li>
+                        <li><a href="./sub4.html#map">위치찾기</a></li>
+                    </ul>
+                </li>
+            </ul><!--gnb-->
+
+            <div class="sub_bg"></div><!--sub의 반투명 배경용-->
+
+        </div><!--header_inner-->
+    </div><!--header-->
+
+
+    <div id="main_banner"><!--메인배너-->
+        <p class="tour_info">TOUR INFO</p>
+        <h1 class="tour_title">투어안내</h1>
+    </div>
+
+
+
+    <!--요트소개-->
+    <div id="container1"><!--배경-->
+        <div id="intro">
+            <div class="babara">
+                <h1 class="title1">요트소개</h1>
+
+                <div id="content1">
+                    <!-- Swiper -->
+                    <div class="swiper yacht">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images_sub1/babara1_1160x590.jpg" alt="요트이미지1"></div>
+                            <div class="swiper-slide"><img src="./images_sub1/babara3_1160x590.jpg" alt="요트이미지3"></div>
+                            <div class="swiper-slide"><img src="./images_sub1/babara4_1160x590.jpg" alt="요트이미지4"></div>
+                            <div class="swiper-slide"><img src="./images_sub1/babara5_1160x590.jpg" alt="요트이미지5"></div>
+                        </div>
+
+                        <div class="swiper-button-next yacht_next"></div>
+                        <div class="swiper-button-prev yacht_prev"></div>
+                        <div class="swiper-pagination yacht_pag"></div>
+                    </div>
+                </div>
+
+                <p class="caption"><span class="span1">2022년형 프랑스 제작의 명품 쌍동선 요트</span>로 흔들림이 적고 안정적이며, <br>
+                    넓은 공간과 고급스러움으로 새로운 요트투어 문화에 최적화하였습니다.
+                </p>
+
+                <h1 class="gold_bar">
+                    <img src="./images_sub1/goldline_3px.png" alt="금세로바">
+                </h1>
+            </div><!--babara-->
+
+        </div><!--intro-->
+
+
+        <!--요트내외부-->
+        <div id="content2">
+            <div class="left">
+                <!-- Swiper -->
+                <div class="swiper interior">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images_sub1/inside1.jpg" alt="요트실내1"></div>
+                        <div class="swiper-slide"><img src="./images_sub1/inside2.jpg" alt="요트실내2"></div>
+                        <div class="swiper-slide"><img src="./images_sub1/inside3.jpg" alt="요트실내3"></div>
+                    </div>
+
+                    <div class="swiper-button-next photo_next"></div>
+                    <div class="swiper-button-prev photo_prev"></div>
+                    <div class="swiper-pagination photo_pag"></div>
+                </div>
+
+                <div class="text1">
+                    <h1 class="out_title">요트 외부</h1>
+                    <p class="out_sub">쌍동선의 구조로 <br>
+                        파도에 흔들림이 적어 <br>
+                        보다 안전하고, 안정된 <br>
+                        투어를 즐길 수 있습니다.
+                    </p>
+                </div>
+            </div><!--inside-->
+
+
+            <div class="right">
+                <div class="text2">
+                    <h1 class="in_title">요트 내부</h1>
+                    <p class="in_sub">쾌적한 환경과<br>
+                        워크샵 및 단체모임도 가능한<br>
+                        폭넓은 공간을 자랑합니다!
+                    </p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper exterior">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images_sub1/outside1.jpg" alt="요트실외1"></div>
+                        <div class="swiper-slide"><img src="./images_sub1/outside2.jpg" alt="요트실외2"></div>
+                        <div class="swiper-slide"><img src="./images_sub1/outside3.jpg" alt="요트실외3"></div>
+                    </div>
+
+                    <div class="swiper-button-next photo_next"></div>
+                    <div class="swiper-button-prev photo_prev"></div>
+                    <div class="swiper-pagination photo_pag"></div>
+                </div>
+            </div><!--outside-->
+        </div><!--content2_요트내외부-->
+    </div><!--container1-->
+
+
+
+    <div id="tour_course"><!--운항코스안내-->
+        <h1 id="course_title">운항코스 안내</h1>
+        <div id="tour_inner">
+            <div class="text3">
+                <h1 class="name">Tour Course</h1>
+                <h3 class="time">운항소요시간:55분</h3>
+                <h1 class="bar">
+                    <img src="./images_sub1/goldline_3px.png" alt="금세로바">
+                </h1>
+                <p class="detail">※운항코스는 기상에 따라 변동될 수 있습니다. <br>
+                    ※프라이빗 투어 운항코스는 선택 변경 가능합니다.</p>
+            </div>
+
+            <h1 class="tour_map">
+                <img src="./images_sub1/tour_course770x440.png" alt="코스지도">
+            </h1>
+
+        </div>
+
+        <div id="circle">
+            <ul class="course1">
+                <li>
+                    <img src="./images_sub1/course1.jpg" alt="선착장">
+                    <p class="locate">선착장</p>
+                </li>
+                <li>
+                    <img src="./images_sub1/course2.jpg" alt="누리마루">
+                    <p class="locate">누리마루</p>
+                </li>
+                <li>
+                    <img src="./images_sub1/course3.jpg" alt="광안대교">
+                    <p class="locate">광안대교</p>
+                </li>
+            </ul>
+
+            <h1 class="course_line">
+                <img src="./images_sub1/course_line.png" alt="코스라인">
+            </h1>
+
+            <ul class="course2">
+                <li>
+                    <img src="./images_sub1/course4.jpg" alt="광안리해수욕장">
+                    <p class="locate">광안리해수욕장</p>
+                </li>
+                <li>
+                    <img src="./images_sub1/course5.jpg" alt="수변공원">
+                    <p class="locate">수변공원</p>
+                </li>
+                <li>
+                    <img src="./images_sub1/course6.jpg" alt="마린시티">
+                    <p class="locate">마린시티</p>
+                </li>
+            </ul>
+        </div>
+    </div><!--운항코스안내-->
+
+
+    <!--서비스 안내-->
+    <div id="container2"><!--background용-->
+        <div id="service">
+            <h1 class="service_title">서비스 안내</h1>
+            <p class="notice">아래 서비스 및 체험프로그램은
+                당일 기상 상황 및 요트에 따라 상이할 수 있습니다.
+            </p>
+
+            <!--상-->
+            <div id="service_inner1">
+                <div class="text4">
+                    <h1 class="yacht_service">Yacht Service</h1>
+                    <h2 class="inkorea">요트에서 제공되는 서비스</h2>
+                    <p class="intent">다과는 다소 상이할 수 있습니다. <br>
+                        약사법에 따라 멀미약 제공이 불가하오니,<br>
+                        멀미가 심하신 분은 미리 멀미약을 준비해<br>
+                        주시거나 드시고 오시길 추천드립니다.</p>
+                </div>
+                <ul class="serv_img1">
+                    <li><img src="./images_sub1/service1.png" alt="우비"></li>
+                    <li><img src="./images_sub1/service2.png" alt="담요"></li>
+                    <li><img src="./images_sub1/service3.png" alt="핫팩"></li>
+                </ul>
+            </div><!--상-->
+
+            <!--하-->
+            <div id="service_inner2">
+                <div class="text5">
+                    <h1 class="yacht_service">Experience</h1>
+                    <h2 class="inkorea">요트 체험 서비스</h2>
+                    <p class="intent">폴라로이드 사진은 상황에 따라 <br>
+                        불가능 할 수 있습니다.<br>
+                        선상낚시는 프라이빗 투어 시<br>이용 가능합니다.<br>
+                        운항체험은 운항사에게 요청 시<br>가능합니다.
+                    </p>
+                </div>
+                <ul class="serv_img2">
+                    <li><img src="./images_sub1/service4.png" alt="폴라로이드"></li>
+                    <li><img src="./images_sub1/service5.png" alt="선상낚시"></li>
+                    <li><img src="./images_sub1/service6.png" alt="운항체험"></li>
+                </ul>
+            </div><!--하-->
+        </div><!--서비스 안내-->
+    </div><!--container2-->
+
+
+    <!--footer-->
+    <div id="footer">
+        <h1 class="ship_animation"><!--요트 애니메이션-->
+            <img src="./images/ship_animate.png" alt="요트애니메이션">
+        </h1>
+
+        <div class="goldbar">
+            <div class="footer_inner">
+                <ul class="left_top">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.messenger.com/"><img src="./images/icon1_facebook.png" alt="페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/icon2_insta.png" alt="인스타그램"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="./images/icon3_youtube.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="box_inner">
+            <ul class="left_box">
+                <li>
+                    <a href="#">
+                        <img src="./images/icon4_locate.png" alt="주소"></a>
+                    <p class="about">부산 해운대구 동백로 2024</p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/icon5_tel.png" alt="전화"></a>
+                    <p class="about">051-884-0987</p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/icon6_www.png" alt="웹사이트"></a>
+                    <p class="about">www.yachtyo.com</p>
+                </li>
+
+                <p class="licence">Biz License. 007-07-00707</p>
+            </ul>
+
+            <div class="right_box">
+                <h1 class="ceo_tel"><a href="#"><img src="./images/1588.png" alt="대표전화"></a></h1>
+                <h2 class="white_logo"><a href="#"><img src="./images/logo_white.png" alt="로고백색"></a></h2>
+            </div>
+        </div><!--box_inner-->
+    </div><!--footer-->
+
+
+
+    <p class="top_btn">
+        <a href="#main_banner"><img src="./images/top_btn.png" alt="탑버튼"></a>
+    </p>
+    <!--the end-->
+
+
+
+
+    <!-- Swiper JS --> <!--Autoplay-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".yacht", {
+            spaceBetween: 0,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <!-- Swiper JS --> <!--Infinite loop-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".interior", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <!-- Swiper JS --> <!--Infinite loop-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".exterior", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <!--서브메뉴 슬라이드 : 
+        마우스를 gnb글자(li)에 올리면 아래로 내려가면서 나타나고, 
+        빠지면  마우스가 올라감-제이쿼리-->
+
+    <script src="./js/script_topbtn.js"></script>
+    <!--top_btn을 원하는 위치에서 나타내기-제이쿼리-->
+
+    <script src="./js/script_easein.js"></script>
+    <!--top버튼 이동시 부드럽게 이동하기-->
+
+
+</body>
+
+</html>
