@@ -510,7 +510,7 @@ body {
 .ship_animation {
     position: absolute;
     top: 150px;
-    left: 1400px;
+    right: 10%;
     animation: move1 2s ease-in-out infinite alternate;
     /*alternate는 
   정방향 한번 1s(1초)에 실행, 
