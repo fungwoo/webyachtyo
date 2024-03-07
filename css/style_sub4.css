@@ -511,11 +511,18 @@ body {
     position: absolute;
     top: 150px;
     right: 10%;
+    /*위의 right: 10%;로 사용하자!
+    (ship의 좌우위치 범위가 화면을 키웠을 때(=마우스를 우측으로 드래그 할 때 화면은 축소될 때) 
+    마우스 좌우 드래그시 %로 값을 줘야 확대,축소시 비율에 맞게 움직임.)
+    예를들어, left:1400px; 처럼 pixel값으로 주게 되면 
+    'F12(개발자모드)'의 'Toggle device toolbar(ctrl+shift+M)'로 화면 드래그로 확인했을 때
+    좌우의 폭이 1400을 넘어갈 때 ship이 밖으로 튀어 나가므로 
+    상대적인 %비율값 만큼 움직일 수 있도록 퍼센트(%)로 입력해야 한다.*/
     animation: move1 2s ease-in-out infinite alternate;
     /*alternate는 
-  정방향 한번 1s(1초)에 실행, 
-  역방향 한번 1s에 실행을 번갈아 가면서 하게 함.
-  (위로 갔다가 다시 돌아오는데 총 2초가 걸림)*/
+    정방향 한번 1s(1초)에 실행, 
+    역방향 한번 1s에 실행을 번갈아 가면서 하게 함.
+    (위로 갔다가 다시 돌아오는데 총 2초가 걸림)*/
 }
 
 /*footer 끝*/
@@ -525,10 +532,28 @@ body {
 /*top_btn*/
 .top_btn {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 15px;
+    bottom: 120px;
     z-index: 99;
     display: none;
+}
+
+.top_btn img {
+    width: 50px;
+    height: 50px;
+}
+
+/*home_btn*/
+.home_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    width: 66px;
+}
+
+.home_btn img {
+    width: 50px;
+    height: 50px;
 }
 
 /*the end*/

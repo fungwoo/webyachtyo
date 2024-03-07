@@ -924,10 +924,28 @@ body {
 /*top_btn*/
 .top_btn {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 15px;
+    bottom: 120px;
     z-index: 99;
     display: none;
+}
+
+.top_btn img {
+    width: 50px;
+    height: 50px;
+}
+
+/*home_btn*/
+.home_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    width: 66px;
+}
+
+.home_btn img {
+    width: 50px;
+    height: 50px;
 }
 
 /*the end*/
