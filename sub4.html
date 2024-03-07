@@ -72,11 +72,14 @@
 
     <!--main_banner-->
     <div id="main_banner"><!--영상-->
-        <video src="./video/Address-Marina.mp4" autoplay muted loop playsinline></video>
+        <video src="./video/car_-_73405 (Original).mp4" autoplay muted loop playsinline></video>
         <p class="tour_info">ADDRESS INFO</p>
-    <h1 class="tour_title">오시는길</h1>
+        <h1 class="tour_title">오시는길</h1>
     </div>
-    
+    <!--현재 css에서 main_banner가 position: relative; 되어 있고,
+        위의 p태그("tour_info")와 h1태그("tour_title") 모두 position: absolute; 되어 있으므로  
+        '<div id="main_banner"> </div>' 안에(~) 있어야 'text(오시는길)'가 메인배너를 기준으로 함께 (확대/축소)동작한다.
+        만약, 밖에 있으면 header가 기준이 된다.(=헤더의 width에 맞춰줘 동작한다는 의미)-->
 
 
     <div id="container"><!--container-배경용-->
@@ -217,9 +220,21 @@
     <p class="top_btn">
         <a href="#main_banner"><img src="./images_sub4/top_btn.png" alt="탑버튼"></a>
     </p>
+
+
+    <p class="top_btn">
+        <a href="#main_banner"><img src="./images/top_btn.png" alt="탑버튼"></a>
+    </p><!--top_btn-->
+
+
+    <div class="home_btn">
+        <a href="../portfolio_home/index.html" class="home_btn">
+            <img src="./images/home60x60.png" alt="home_btn">
+        </a>
+    </div><!--home_btn-->
+
+
     <!--the end-->
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -230,6 +245,9 @@
 
     <script src="./js/script_topbtn.js"></script>
     <!--top_btn을 원하는 위치에서 나타내기-제이쿼리-->
+
+    <script src="./js/script_homebtn.js"></script>
+    <!--home_btn을 원하는 위치에서 나타내기-제이쿼리-->
 
     <script src="./js/script_easein.js"></script>
     <!--top버튼 이동시 부드럽게 이동하기-->
